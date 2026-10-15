@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=VT323&display=swap');
+
+body {
+	display: none;
+	overflow: hidden;
+	user-select: none;
+	background: rgb(40,40,40);
+	background: linear-gradient(0deg, rgba(40,40,40,0.7315301120448179) 0%, rgba(0,0,0,0.30575980392156865) 100%);
+}
+
+.Payphone {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.Payphone .PayphoneImage {
+	width: 80rem;
+}
+
+.Payphone .PayphoneArm {
+	position: absolute;
+	width: 26.5rem;
+	margin-right: 39rem;
+	margin-top: 5.5rem;
+}
+
+.Numeric {
+	position: absolute;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 1.5rem;
+	margin-left: 15rem;
+	margin-bottom: 1.7rem;
+}
+
+.Numeric .NumericButton {
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+}
+
+.Numeric .NumericButton:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.CallButton {
+	position: absolute;
+	width: 2.4rem;
+	height: 2.4rem;
+	background-color: rgba(0, 255, 0, 0.3);
+	margin-left: 8.1rem;
+	margin-top: 20.8rem;
+	cursor: pointer;
+}
+
+.CallButton:active {
+	background-color: rgba(0, 255, 0, 0.1);
+}
+
+.CallButton.Red {
+	background-color: rgba(255, 0, 0, 0.3);
+}
+
+.CallButton.Red:active {
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+.Screen {
+	position: absolute;
+	display: flex;
+	width: 14rem;
+	height: 8.2rem;
+	margin-left: 17rem;
+	margin-bottom: 41rem;
+	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: 'VT323', monospace;
+	color: rgb(24, 24, 24);
+	background-color: rgba(0, 170, 0, 0.500);
+}
+
+.PayphoneNumber {
+	position: absolute;
+	font-size: 1.1rem;
+	font-family: 'Rock Salt', cursive;
+	margin-left: 57rem;
+	margin-bottom: 8rem;
+	rotate: 15deg;
+	color: rgb(24, 24, 24);
+}
